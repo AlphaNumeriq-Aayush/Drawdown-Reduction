@@ -1,0 +1,33 @@
+masterAccounts:
+  - id: 41e09d41-e860-435c-ae39-d2af0d4e7bbd
+    name: Signal_Pro_Master_Account_Demo
+    description: Some useful description about your strategy
+    slaveAccounts:
+      - id: 97b5f592-995f-4cf4-92d7-40cce7e01a25
+        enable: true
+        name: Appx_LiveAccount_10220915_TMlive10_15K_Slave_Account
+        multiplier: 1
+        symbolFilter:
+          included:
+            - GBPUSD
+        allowedSides:
+          - sell
+          - buy
+  - id: 4c139753-4bb6-4f9e-9d3e-c1734f794140
+    name: XFX_Hunter_Master_Account_Demo
+    description: Some useful description about your strategy
+    slaveAccounts:
+      - id: 97b5f592-995f-4cf4-92d7-40cce7e01a25
+        enable: true
+        name: Appx_LiveAccount_10220915_TMlive10_15K_Slave_Account
+        multiplier: 1
+        symbolFilter:
+          included:
+            - EURUSD
+            - GBPUSD
+        allowedSides:
+          - sell
+          - buy
+  
+
+

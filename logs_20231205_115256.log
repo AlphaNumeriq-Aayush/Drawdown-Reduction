@@ -1,0 +1,4 @@
+2023-12-05 11:52:56,330 DEBUG Initializing Drawdown Reduction Algorithm...
+2023-12-05 11:52:59,024 DEBUG Deploying account
+2023-12-05 11:53:00,883 DEBUG Waiting for API server to connect to broker (may take couple of minutes)
+2023-12-05 11:53:10,744 DEBUG Connected to mt4 Tickmill Ltd Tickmill-Live10 account #10220915 with balance $20591

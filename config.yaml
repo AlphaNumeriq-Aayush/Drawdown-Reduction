@@ -1,0 +1,39 @@
+# Copy Trading and Drawdown Reduction Configuration
+# Note you can only enable drawdown reduction on slave accounts. 
+masterAccounts:
+  - id: 41e09d41-e860-435c-ae39-d2af0d4e7bbd
+    name: Signal_Pro_Master_Account_Demo
+    description: Some useful description about your strategy
+    slaveAccounts: 
+      - name: Appx_LiveAccount_10220915_TMlive10_15K_Slave_Account # Slave Account Name must be all one word
+        id: 97b5f592-995f-4cf4-92d7-40cce7e01a25 # Meta API Account ID
+        enable: true  # Enables copying for slave account
+        multiplier: 1 # Trade Copier Multiplier
+        symbolFilter:
+          included: # Included Symbols for Slave Account
+            - GBPUSD
+        allowedSides: # Allowed Sides for Slave Account
+          - sell
+          - buy
+        drawdownReduction:
+          max_allowable_series_count: 3
+          profit_activation_trigger: 2
+  - id: 4c139753-4bb6-4f9e-9d3e-c1734f794140
+    name: XFX_Hunter_Master_Account_Demo
+    description: Some useful description about your strategy
+    slaveAccounts: 
+      - name: Appx_LiveAccount_10220915_TMlive10_15K_Slave_Account # Slave Account Name must be all one word
+        id: 97b5f592-995f-4cf4-92d7-40cce7e01a25 # Meta API Account ID
+        enable: true  # Enables copying for slave account
+        multiplier: 1 # Trade Copier Multiplier
+        symbolFilter:
+          included: # Included Symbols for Slave Account
+            - EURUSD
+            - GBPUSD
+        allowedSides: # Allowed Sides for Slave Account
+          - sell
+          - buy
+        drawdownReduction:
+          max_allowable_series_count: 3
+          profit_activation_trigger: 2
+   

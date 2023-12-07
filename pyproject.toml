@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "drawdown-redux-manager"
+version = "0.1.0"
+description = ""
+authors = ["Andrea Palladino <axp1277@gmail.com>"]
+readme = "README.md"
+packages = [{include = "drawdown_redux_manager"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pytest = "^7.3.1"
+python-dotenv = "^1.0.0"
+requests = "2.24.0"
+metaapi-cloud-sdk = "^20.9.1"
+pydantic = "1.9.1"
+pandas = "^2.0.2"
+pyyaml = "^6.0"
+
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
